@@ -23,6 +23,7 @@
     .article-list-text {
       height: 150px;
       width: 545px;
+      position: relative;
       float: right;
 
       .article-list-title {
@@ -41,7 +42,9 @@
       }
 
       .article-list-user {
-        padding: 3px 0;
+        position: absolute;
+        bottom: 15px;
+        margin: 0;
 
         a {
           font-size: 13px;
