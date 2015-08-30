@@ -8,7 +8,33 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="wrapper">
+  <div id="header">
+
+    <div class="search">
+      <input name="keyword" class="search-keyword" value="" type="text">  
+      <i class="fi-magnifying-glass"></i>
+    </div>
+
+    <div class="logo">
+      <a href="/"><%= image_tag 'logo.png'  %></a>
+    </div>
+
+    <ul>
+      <li class="header-login">
+        <a href="/users/login"><i class="fi-torso"></i><br>ログイン</a>
+      </li>
+      <li class="header-signup">
+        <a href="/users/signup"><i class="fi-plus"></i><br>新規登録</a>
+      </li>
+    </ul>
+  </div>
+
+  <%= yield %>
+</div>
+
+<div id="footer">
+</div>
 
 </body>
 </html>

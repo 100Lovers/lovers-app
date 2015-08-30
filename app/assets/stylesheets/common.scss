@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////
+// common scss : define common parts
+////////////////////////////////////////////////////
+
+@import 'mixins';
+@import 'colors';
+
+/* article-list */
+
+.article-list {
+
+  .article-list-content {
+    border-bottom: 1px dotted $border-dotted;
+    margin-bottom: 15px;
+    
+    .article-list-thumb img {
+      float: left;
+      margin-right: 20px;
+      width: 135px;
+      height: 135px;
+    }
+
+    .article-list-text {
+      height: 150px;
+      width: 545px;
+      float: right;
+
+      .article-list-title {
+        margin: 0;
+
+        a {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      
+      .article-list-description {
+        font-size: 11px;
+        color: $font-gray;
+      }
+
+      .article-list-user {
+        padding: 3px 0;
+
+        a {
+          font-size: 13px;
+          color: $font-thin;
+        }
+      }
+    }
+
+    &:after {
+      @include after-clear;
+    }
+  }
+}
+

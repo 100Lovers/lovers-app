@@ -1,0 +1,81 @@
+////////////////////////////////////////////////////
+// layout scss
+////////////////////////////////////////////////////
+
+@import 'mixins';
+@import 'colors';
+
+/* base */
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fff;
+  color: $font-default;
+  font-family: "メイリオ","Meiryo", verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style: outside none none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* content */
+
+#wrapper {
+  margin: 0px auto;
+  padding: 0px;
+  width: 1020px;
+}
+
+/* 2 column layout */
+
+#main-content {
+
+  #top-inner {
+    height: 30px;
+    border-bottom: 1px solid $border-default;
+    margin-bottom: 20px;
+    position: relative;
+
+    .today {
+      position: absolute;
+      top: 7px;
+      left: 450px;
+      color: $font-gray;
+    }
+  }
+
+  #content-left {
+    float: left;
+    width: 700px;
+    min-height: 400px;
+  }
+
+  #content-right {
+    float: right;
+    width: 300px;
+  }
+
+  &:after {
+    @include after-clear;
+  }
+}
+

@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////
+// layout scss
+////////////////////////////////////////////////////
+
+@import 'mixins';
+@import 'colors';
+
+#header {
+  position: relative;
+  border-bottom: 1px solid $border-default;
+  height: 100px;
+
+  .search {
+    border: 1px solid $border-default;  
+    position: absolute;
+    padding: 5px;
+    width: 166px;  
+    top: 35px;
+    left: 0;
+
+    .search-keyword  {  
+        border: 0;  
+        width: 146px;
+    }  
+  
+    .fi-magnifying-glass {
+      float: right;
+      color: $font-gray;
+      cursor: pointer;
+    }
+  
+    &:after {
+      @include after-clear;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 32px;
+    left: 375px;
+    width: 240px;
+    text-align: center;
+
+    a {
+      color: $font-default;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 35px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $font-gray;
+    }
+  }
+
+  ul {
+    position: absolute;
+    top: 0;
+    right: 0px;
+
+
+    .header-login, .header-signup {
+      float: left;
+      height: 90px;
+      border-left: 1px solid $border-default;
+
+      .fi-torso, .fi-plus {
+        font-size: 16px;
+      }
+
+      a {
+        font-size: 12px;
+        color: $font-gray;
+        width: 108px;
+        height: 50px;
+        padding: 30px 0px 10px 0;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        
+        &:hover {
+          background: $bg-gray;
+        }
+      }
+
+    }
+
+    &:after {
+      @include after-clear;
+    }
+  }
+
+  &:after {
+    @include after-clear;
+  }
+}
+

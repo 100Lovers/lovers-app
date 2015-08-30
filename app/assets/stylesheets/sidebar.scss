@@ -1,0 +1,107 @@
+////////////////////////////////////////////////////
+// sidebar scss
+////////////////////////////////////////////////////
+
+@import 'mixins';
+@import 'colors';
+
+#sidebar {
+  border-left: 1px solid $border-default;
+
+  .sidebar-box {
+    margin-bottom: 25px;
+
+    .sidebar-box-title {
+      font-size: 14px;
+      font-weight: bold;
+      border-left: 3px solid $common-point;
+      border-bottom: 1px solid $border-default;
+      padding: 10px 15px;
+
+      .sidebar-box-title-lead {
+        color: $font-gray;
+        font-size: 11px;
+        font-weight: normal;
+      }
+    }
+
+    /* article list */
+
+    .side-article-list {
+      margin: 10px;
+
+      .article-list-content {
+        border-bottom: 1px dotted $border-dotted;
+        margin: 5px 0;
+   
+        .article-list-thumb img {
+          float: left;
+          width: 50px;
+          height: 50px;
+        }
+   
+        .article-list-text {
+          width: 220px;
+          float: right;
+   
+          .article-list-title {
+            margin: 0;
+   
+            a {
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+   
+          .article-list-user {
+            padding: 0;
+            margin: 0;
+   
+            a {
+              font-weight: normal;
+              font-size: 11px;
+              color: $font-gray;
+            }
+          }
+        }
+   
+        &:after {
+          @include after-clear;
+        }
+      }
+    }
+
+    /* tag-list */
+
+    .side-tag-list {
+      padding: 10px;
+
+      .tag a {
+        padding: 4px 7px;
+        margin: 0 7px 7px 0;
+        float: left;
+        color: $font-gray;
+        display: inline-block; 
+        border: 1px solid $border-default;
+
+        .fi-price-tag {
+          color: $common-point-thin;
+          font-size: 16px;
+          padding-right: 5px;
+        }
+
+        &:hover {
+          color: $bg-gray;
+          text-decoration: none;
+        }
+      }
+
+      &:after {
+        @include after-clear;
+      }
+    }
+
+  }
+}
+
