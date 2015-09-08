@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LoversApp</title>
+  <%= stylesheet_link_tag    'sp/application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'sp/application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+  <div class="content">
+    <div class="menu">
+      <i class="fi-list"></i>
+    </div>
+
+    <div class="logo">
+      <a href="/"><%= image_tag 'logo.png'  %></a>
+    </div>
+
+    <div class="search">
+      <i class="fi-magnifying-glass"></i>
+    </div>
+  </div>
+</div>
+
+<div id="wrapper">
+  <%= yield %>
+</div>
+
+<div id="footer">
+</div>
+
+</body>
+</html>

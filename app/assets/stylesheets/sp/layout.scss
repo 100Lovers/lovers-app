@@ -1,0 +1,93 @@
+////////////////////////////////////////////////////
+// layout scss
+////////////////////////////////////////////////////
+
+@import 'mixins';
+@import 'colors';
+
+/* base */
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: $white;
+  color: $font-default;
+  font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Lucida Grande",Meiryo,"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style: outside none none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* header */
+#header {
+  background-color: $white;
+  opacity: 0.8;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 50px;
+  width: 100%;
+
+  .content {
+    position: relative;
+
+    .menu {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      width: 65px;
+      height: 50px;
+      color: $font-gray;
+      font-size: 30px;
+    }
+  
+    .logo {
+        width: 100px;
+        margin: 5px auto;
+  
+        img {
+          height: 40px;
+          vertical-align: top;
+        }
+    }
+  
+    .search {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      width: 65px;
+      height: 50px;
+      color: $font-gray;
+      font-size: 30px;
+    }
+  }
+}
+
+/* content */
+
+#wrapper {
+  min-height: 560px;
+  padding-top: 50px;
+}
+
