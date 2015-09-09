@@ -8,14 +8,14 @@
 #header {
   position: relative;
   border-bottom: 1px solid $border-default;
-  height: 70px;
+  height: 80px;
 
   .search {
     border: 1px solid $border-default;  
     position: absolute;
     padding: 5px;
     width: 166px;  
-    top: 20px;
+    top: 30px;
     left: 0;
 
     .search-keyword  {  
@@ -36,7 +36,7 @@
 
   .logo {
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 435px;
 
     a {
@@ -64,7 +64,7 @@
 
     .header-login, .header-signup {
       float: left;
-      height: 70px;
+      height: 80px;
       border-left: 1px solid $border-default;
 
       .fi-torso, .fi-plus {
@@ -76,7 +76,7 @@
         color: $font-gray;
         width: 108px;
         height: 50px;
-        padding: 15px 0px 5px 0;
+        padding: 25px 0px 5px 0;
         text-align: center;
         display: inline-block;
         text-decoration: none;

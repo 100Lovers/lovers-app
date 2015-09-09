@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////
+// footer scss
+////////////////////////////////////////////////////
+
+@import 'mixins';
+@import 'colors';
+
+/* footer */
+
+#footer {
+  background-color: $common-point;
+  color: $white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
