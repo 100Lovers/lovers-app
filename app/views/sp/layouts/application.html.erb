@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LoversApp</title>
+  <%= display_meta_tags({
+        :title => "Lovers app" ,
+        :description => '',
+        :keywords => '',
+        :viewport => "width=device-width, initial-scale=1.0",
+    })
+  %>
   <%= stylesheet_link_tag    'sp/application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'sp/application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
