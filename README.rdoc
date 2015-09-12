@@ -1,28 +1,46 @@
-== README
+== Lovers app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is 100kintu app. We love 100kin.
 
-Things you may want to cover:
+{<img src="https://circleci.com/gh/100Lovers/lovers-app.svg?style=shield&circle-token=93a41da4e8ea32ba63ee05757a6c998c48787d68" />}[https://circleci.com/gh/100Lovers/lovers-app]
+
+=== Environment
 
 * Ruby version
 
-* System dependencies
+  2.2.3
 
-* Configuration
+* Rails version
 
-* Database creation
+  4.2.4
 
-* Database initialization
+* Database
 
-* How to run the test suite
+  mysql2
 
-* Services (job queues, cache servers, search engines, etc.)
+=== Contributing
 
-* Deployment instructions
+1. Create Your Branch
 
-* ...
+        $ git checkout -b my-new-branch
 
+2. Update Your Branch
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+   It's pretty likely that other changes to master have happened while you were working. Go get them:
+
+        $ git checkout master
+        $ git pull origin master
+
+   Reapply your patch on top of the latest changes:
+
+        $ git checkout my-new-branch
+        $ git merge master
+
+3. Run Test Suite
+
+   Tests still pass? Change still seems reasonable to you? Then move on:
+
+        $ bin/rake test
+
+4. Push and Create PullRequest
+
