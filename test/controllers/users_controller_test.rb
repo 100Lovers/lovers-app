@@ -31,7 +31,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should get edit" do
     get :edit, id: @user
-    assert_response :success
+    assert_response :error
   end
 
   test "should update user" do
